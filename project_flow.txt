@@ -1,0 +1,25 @@
+1. Create an app --> app.py and run in terminal
+---------------------------------------------------------------------
+Dockerize the app:
+2. Start Docker-hub and docker desktop(sign in )
+3. Prepare the dockerfile in the project
+
+
+4. Create the docker image and test it:
+
+docker build -t kubernetes-test-app:latest .
+docker images
+docker run -p 5000:5000 kubernetes-test-app:latest
+
+This image can be pushed to docker hub, anyone can download it can run
+---------------------------------------------------------------------
+
+Run app.py with Kubernetes:
+
+5. Create deployment.yaml
+
+6. Install minikube
+
+7. minikube start
+# or
+minikube start --embed-certs
